@@ -973,7 +973,7 @@ After deploying your application, it's important to clean up resources to avoid 
         To clean up resources after deploying with Docker Compose, you can stop and remove the running containers using the following command:
 
         ```bash title="Docker CLI - Stop and remove containers"
-        docker compose --env-file ./aspire-output/.env.Production -f ./aspire-output/docker-compose.yaml down
+        aspire do docker-compose-env-down
         ```
     </TabItem>
     <TabItem id="azure" label="Azure">
