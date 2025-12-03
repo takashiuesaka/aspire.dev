@@ -6,6 +6,9 @@
     <SelfContained>false</SelfContained>
     <PublishAot>false</PublishAot>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <!-- Disable default compression formats since we don't use the compressed assets. -->
+    <EnableDefaultCompressionFormats>false</EnableDefaultCompressionFormats>
+    <ContainerBaseImage>mcr.microsoft.com/dotnet/aspnet:10.0-noble-chiseled</ContainerBaseImage>
   </PropertyGroup>
 
   <ItemGroup>
